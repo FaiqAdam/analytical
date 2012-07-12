@@ -5,7 +5,7 @@ var Analytical = {
   },
   event: function(name, data) {
     if (typeof data === 'undefined') { data = {}; }
-<%= raw analytical.now.event('__EVENT__', {}).gsub(/"__EVENT__"/,'name').gsub(/"?\{\}"?/,'data') %>
+<%= raw analytical.now.event('__EVENT__', {}).gsub(/"__EVENT__"/,'name').gsub(/"?\{\}"?/,'data') %> 
   }
 };
 </script>
